@@ -2,10 +2,18 @@
 
 ## Configurações do projeto
 
+
+
 Rode o comando para instalar as dependecias
 ```sh
 npm install
 composer install
+```
+
+Altere o .env.example para .env e altere as credenciais do banco de dados e gere uma app_key com o seguinte comando
+
+```
+php artisan key:generate
 ```
 
 Para geração das migrations rode o comando
@@ -23,7 +31,14 @@ composer dev
 Para gerar livros aleatórios utilize do comando
 
 ```sh
-php artisan db:seed --class=BookSeeder 
+php artisan db:seed
+```
+
+A conta do administrador é
+
+```sh
+email: admin@admin.com
+senha: 123456789
 ```
 
 ---
